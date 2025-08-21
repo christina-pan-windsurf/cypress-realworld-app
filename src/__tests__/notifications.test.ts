@@ -31,7 +31,8 @@ import {
 
 describe("Notifications", () => {
   let user: User;
-  beforeEach(() => {
+  beforeEach(async () => {
+    await new Promise(resolve => setTimeout(resolve, 30));
     seedDatabase();
     user = getAllUsers()[0];
   });
@@ -44,7 +45,8 @@ describe("Notifications", () => {
     let likeNotification: LikeNotification;
     let comment: Comment;
     let commentNotification: CommentNotification;
-    beforeEach(() => {
+    beforeEach(async () => {
+      await new Promise(resolve => setTimeout(resolve, 5));
       user = getAllUsers()[0];
       transactions = getTransactionsForUserContacts(user.id);
       transaction = transactions[0];

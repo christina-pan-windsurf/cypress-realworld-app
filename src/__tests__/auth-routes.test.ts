@@ -3,7 +3,8 @@ import { seedDatabase, getUserByUsername, getAllUsers } from "../../backend/data
 import bcrypt from "bcryptjs";
 
 describe("Authentication Routes", () => {
-  beforeEach(() => {
+  beforeEach(async () => {
+    await new Promise(resolve => setTimeout(resolve, 10));
     return seedDatabase();
   });
 
