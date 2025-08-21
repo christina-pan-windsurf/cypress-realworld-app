@@ -32,7 +32,7 @@ import {
 describe("Notifications", () => {
   let user: User;
   beforeEach(async () => {
-    await new Promise(resolve => setTimeout(resolve, 30));
+    await new Promise((resolve) => setTimeout(resolve, 30));
     seedDatabase();
     user = getAllUsers()[0];
   });
@@ -46,7 +46,7 @@ describe("Notifications", () => {
     let comment: Comment;
     let commentNotification: CommentNotification;
     beforeEach(async () => {
-      await new Promise(resolve => setTimeout(resolve, 5));
+      await new Promise((resolve) => setTimeout(resolve, 5));
       user = getAllUsers()[0];
       transactions = getTransactionsForUserContacts(user.id);
       transaction = transactions[0];
