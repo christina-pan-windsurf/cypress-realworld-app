@@ -11,7 +11,7 @@ import { BankTransferType } from "../../src/models";
 
 describe("Bank Transfer Routes", () => {
   beforeEach(() => {
-    seedDatabase();
+    return seedDatabase();
   });
 
   it("should get bank transfers by user ID", () => {

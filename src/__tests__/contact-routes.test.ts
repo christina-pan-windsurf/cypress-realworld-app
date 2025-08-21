@@ -9,7 +9,7 @@ import {
 
 describe("Contact Routes", () => {
   beforeEach(() => {
-    seedDatabase();
+    return seedDatabase();
   });
 
   it("should get contacts by username", () => {

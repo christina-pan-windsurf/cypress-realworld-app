@@ -10,7 +10,7 @@ import {
 
 describe("Comment Routes", () => {
   beforeEach(() => {
-    seedDatabase();
+    return seedDatabase();
   });
 
   it("should get comments by transaction ID", () => {

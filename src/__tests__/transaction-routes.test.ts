@@ -17,7 +17,7 @@ import { DefaultPrivacyLevel } from "../../src/models/user";
 
 describe("Transaction Routes", () => {
   beforeEach(() => {
-    seedDatabase();
+    return seedDatabase();
   });
 
   it("should get transactions for user", () => {

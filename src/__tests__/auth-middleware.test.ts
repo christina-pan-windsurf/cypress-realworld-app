@@ -4,7 +4,7 @@ import { ensureAuthenticated } from "../../backend/helpers";
 
 describe("Authentication Middleware", () => {
   beforeEach(() => {
-    seedDatabase();
+    return seedDatabase();
   });
 
   it("should validate user authentication state", () => {

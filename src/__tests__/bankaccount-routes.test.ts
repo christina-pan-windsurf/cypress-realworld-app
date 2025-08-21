@@ -11,7 +11,7 @@ import {
 
 describe("Bank Account Routes", () => {
   beforeEach(() => {
-    seedDatabase();
+    return seedDatabase();
   });
 
   it("should get bank accounts by user ID", () => {

@@ -9,7 +9,7 @@ import {
 
 describe("Like Routes", () => {
   beforeEach(() => {
-    seedDatabase();
+    return seedDatabase();
   });
 
   it("should get likes by transaction ID", () => {

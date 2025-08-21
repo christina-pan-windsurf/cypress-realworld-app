@@ -11,7 +11,7 @@ import {
 
 describe("User Routes", () => {
   beforeEach(() => {
-    seedDatabase();
+    return seedDatabase();
   });
 
   it("should get user by ID", () => {

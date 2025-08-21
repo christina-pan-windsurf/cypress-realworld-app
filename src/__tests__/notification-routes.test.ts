@@ -12,7 +12,7 @@ import { PaymentNotificationStatus, NotificationsType } from "../../src/models";
 
 describe("Notification Routes", () => {
   beforeEach(() => {
-    seedDatabase();
+    return seedDatabase();
   });
 
   it("should get unread notifications by user ID", () => {

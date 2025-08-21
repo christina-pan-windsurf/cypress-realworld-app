@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 
 describe("Authentication Routes", () => {
   beforeEach(() => {
-    seedDatabase();
+    return seedDatabase();
   });
 
   it("should authenticate user with valid credentials", () => {
