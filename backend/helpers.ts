@@ -7,6 +7,7 @@ import jwksRsa from "jwks-rsa";
 
 // @ts-ignore
 import OktaJwtVerifier from "@okta/jwt-verifier";
+// @ts-ignore - aws-exports is generated/copied at build time
 import awsConfig from "../src/aws-exports";
 
 dotenv.config();

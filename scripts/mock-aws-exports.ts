@@ -1,6 +1,4 @@
-import { ResourcesConfig } from "aws-amplify";
-
-const awsmobile: ResourcesConfig = {
+const awsmobile = {
   Auth: {
     Cognito: {
       userPoolId: "us-east-1_abcdefghi",
