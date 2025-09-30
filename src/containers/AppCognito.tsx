@@ -12,7 +12,6 @@ import PrivateRoutesContainer from "./PrivateRoutesContainer";
 import { Amplify, ResourcesConfig } from "aws-amplify";
 import { fetchAuthSession, signInWithRedirect, signOut } from "aws-amplify/auth";
 
-// @ts-ignore
 import awsConfig from "../aws-exports";
 const PREFIX = "AppCognito";
 

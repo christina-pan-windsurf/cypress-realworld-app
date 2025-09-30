@@ -1,6 +1,6 @@
-// mock aws-exports.js
+import { ResourcesConfig } from "aws-amplify";
 
-const awsmobile = {
+const awsmobile: ResourcesConfig = {
   Auth: {
     Cognito: {
       userPoolId: "us-east-1_abcdefghi",
