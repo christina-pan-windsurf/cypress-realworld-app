@@ -38,7 +38,7 @@ export default defineConfig(({ command, mode }) => {
     },
     test: {
       environment: "jsdom",
-      setupFiles: "./src/setup-tests.js",
+      setupFiles: "./src/setup-tests.ts",
       exclude: ["node_modules", "cypress", "dist"],
     },
   };
